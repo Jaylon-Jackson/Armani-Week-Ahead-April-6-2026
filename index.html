@@ -549,7 +549,7 @@ footer p{font-family:"DM Mono",monospace;font-size:.6rem;color:rgba(201,148,58,.
     </div>
   </div>
 
-  <p class="timer-deadline">This reading closes <strong>Thursday, April 16 &middot; Midnight</strong></p>
+  <p class="timer-deadline">This reading closes <strong>Sunday, April 12 &middot; Midnight</strong></p>
 
   <div class="save-section">
     <div class="save-section-label">How to Save Your Reading</div>
@@ -581,14 +581,14 @@ footer p{font-family:"DM Mono",monospace;font-size:.6rem;color:rgba(201,148,58,.
           <strong>Copy the link.</strong> The URL for this page doesn&rsquo;t change while
           it&rsquo;s live. Copy it from Safari and send it to yourself in a note or text
           so you can return quickly before the deadline.
-          After April 16th, the link will close &mdash; saving the PDF is still the most reliable option.
+          After April 12th, the link will close &mdash; saving the PDF is still the most reliable option.
         </div>
       </div>
 
     </div>
 
     <div class="save-note">
-      <p>After April 16th, this page will display a closing message and the reading will no longer be accessible.
+      <p>After April 12th, this page will display a closing message and the reading will no longer be accessible.
       If you&rsquo;d like to revisit a past reading or book a new session, reach out directly.</p>
     </div>
   </div>
@@ -612,8 +612,8 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelect
 
 
 (function(){
-  // Expires April 16 2026 at midnight ET
-  var expiry = new Date('2026-04-16T04:00:00Z'); // midnight ET = 04:00 UTC
+  // Expires Sunday April 12 2026 at midnight ET
+  var expiry = new Date('2026-04-13T04:00:00Z'); // midnight ET = 04:00 UTC
   if(new Date() > expiry){
     var gate = document.getElementById('expiryGate');
     if(gate){ gate.classList.add('active'); document.body.style.overflow='hidden'; }
@@ -622,7 +622,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelect
 
 
 (function(){
-  var expiry = new Date('2026-04-16T04:00:00Z');
+  var expiry = new Date('2026-04-13T04:00:00Z');
   function pad(n){ return String(n).padStart(2,'0'); }
   function tick(){
     var now = new Date();
