@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armani &middot; Week Ahead &middot; April 6 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0c0a;--bone:#f5f0e8;--parchment:#ede5d4;--gold:#c9943a;--gold-light:#e8c67a;--gold-dim:#8a6520;--rust:#8b3a1a;--plum:#5c2d5e}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--bone);font-family:"Cormorant Garamond",serif;font-size:18px;line-height:1.7;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.25}
+.starfield{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;background:var(--gold-light);border-radius:50%;opacity:0;animation:twinkle var(--dur,4s) var(--delay,0s) infinite}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(1)}50%{opacity:var(--bright,.6);transform:scale(1.5)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:linear-gradient(to bottom,rgba(14,12,10,.96),transparent);padding:1.2rem 2.5rem;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:"Cinzel Decorative",serif;font-size:.85rem;color:var(--gold);letter-spacing:.2em;text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-family:"DM Mono",monospace;font-size:.65rem;color:var(--gold-dim);text-decoration:none;letter-spacing:.15em;text-transform:uppercase;transition:color .3s}
+.nav-links a:hover{color:var(--gold-light)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:6rem 2rem 4rem;z-index:1}
+.hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(ellipse,rgba(201,148,58,.12) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;animation:pulse-glow 6s ease-in-out infinite}
+@keyframes pulse-glow{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}}
+.hero-eyebrow{font-family:"DM Mono",monospace;font-size:.65rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;opacity:0;animation:fade-up 1s .3s forwards}
+.hero-greeting{font-size:clamp(1.1rem,3vw,1.4rem);font-weight:300;font-style:italic;color:var(--parchment);margin-bottom:.5rem;opacity:0;animation:fade-up 1s .5s forwards}
+.hero-name{font-family:"Cinzel Decorative",serif;font-size:clamp(2.8rem,8vw,5.5rem);font-weight:700;color:var(--gold);line-height:1.1;margin-bottom:1rem;opacity:0;animation:fade-up 1s .7s forwards;text-shadow:0 0 60px rgba(201,148,58,.3)}
+.hero-sub{font-size:clamp(1rem,2.5vw,1.25rem);font-weight:300;color:rgba(245,240,232,.6);margin-bottom:3rem;opacity:0;animation:fade-up 1s .9s forwards}
+.hero-date-pill{display:inline-flex;align-items:center;gap:.6rem;font-family:"DM Mono",monospace;font-size:.7rem;letter-spacing:.2em;color:var(--gold-dim);border:1px solid rgba(201,148,58,.3);padding:.5rem 1.2rem;border-radius:2rem;margin-bottom:4rem;opacity:0;animation:fade-up 1s 1.1s forwards}
+.hero-date-pill::before{content:"◆";color:var(--gold);font-size:.5rem}
+.scroll-cue{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:0;animation:fade-up 1s 1.5s forwards}
+.scroll-cue span{font-family:"DM Mono",monospace;font-size:.55rem;letter-spacing:.3em;color:var(--gold-dim);text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold-dim),transparent);animation:scroll-drop 2s ease-in-out infinite}
+@keyframes scroll-drop{0%{transform:scaleY(0);transform-origin:top;opacity:1}50%{transform:scaleY(1);transform-origin:top;opacity:1}51%{transform:scaleY(1);transform-origin:bottom;opacity:1}100%{transform:scaleY(0);transform-origin:bottom;opacity:0}}
+@keyframes fade-up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.reader-section{position:relative;z-index:1;padding:5rem 2rem;max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.sigil-wrap{display:flex;justify-content:center}
+.sigil-ring{position:relative;width:220px;height:220px;border-radius:50%;border:1px solid rgba(201,148,58,.3);display:flex;align-items:center;justify-content:center}
+.sigil-ring::before{content:"";position:absolute;inset:8px;border-radius:50%;border:1px solid rgba(201,148,58,.15)}
+.sigil-inner{width:148px;height:148px;border-radius:50%;background:radial-gradient(ellipse at 40% 35%,rgba(201,148,58,.25),rgba(92,45,94,.2),rgba(14,12,10,.9));display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(201,148,58,.25);animation:sigil-glow 6s ease-in-out infinite}
+@keyframes sigil-glow{0%,100%{box-shadow:0 0 30px rgba(201,148,58,.15),inset 0 0 20px rgba(92,45,94,.1)}50%{box-shadow:0 0 50px rgba(201,148,58,.25),inset 0 0 30px rgba(92,45,94,.2)}}
+.orbit{position:absolute;width:220px;height:220px;animation:orbit-spin var(--speed,8s) linear infinite}
+.orbit-dot{position:absolute;width:5px;height:5px;background:var(--gold);border-radius:50%;top:-2.5px;left:50%;transform:translateX(-50%);box-shadow:0 0 8px var(--gold)}
+@keyframes orbit-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.sigil-initial{font-family:"Cinzel Decorative",serif;font-size:3.2rem;color:var(--gold);line-height:1;text-shadow:0 0 30px rgba(201,148,58,.5)}
+.sigil-title{font-family:"DM Mono",monospace;font-size:.5rem;letter-spacing:.25em;color:var(--gold-dim);text-transform:uppercase;margin-top:.3rem}
+.reader-bio h2{font-family:"Cinzel Decorative",serif;font-size:1rem;color:var(--gold);letter-spacing:.15em;margin-bottom:.3rem}
+.reader-bio .reader-tag{font-family:"DM Mono",monospace;font-size:.6rem;color:var(--gold-dim);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
+.reader-bio p{font-size:.95rem;color:rgba(245,240,232,.75);line-height:1.8;margin-bottom:1rem}
+.deck-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.deck-badge{font-family:"DM Mono",monospace;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;padding:.3rem .7rem;border-radius:2rem;border:1px solid currentColor}
+.deck-badge.len{color:#5a9fd4;border-color:rgba(90,159,212,.4);background:rgba(90,159,212,.05)}
+.deck-badge.kip{color:#b07fd4;border-color:rgba(176,127,212,.4);background:rgba(176,127,212,.05)}
+.deck-badge.tar{color:#6ab89a;border-color:rgba(106,184,154,.4);background:rgba(106,184,154,.05)}
+.deck-badge.ora{color:#d4845a;border-color:rgba(212,132,90,.4);background:rgba(212,132,90,.05)}
+.section-divider{display:flex;align-items:center;gap:1rem;max-width:900px;margin:0 auto 3rem;padding:0 2rem}
+.divider-line{flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(201,148,58,.3),transparent)}
+.divider-glyph{color:var(--gold);font-size:.7rem}
+.before-card{position:relative;z-index:1;max-width:900px;margin:0 auto 5rem;padding:0 2rem}
+.before-inner{background:linear-gradient(135deg,rgba(201,148,58,.07),rgba(92,45,94,.07));border:1px solid rgba(201,148,58,.2);border-radius:4px;padding:3rem;position:relative;overflow:hidden}
+.before-inner::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--plum),var(--gold),var(--rust))}
+.before-label{font-family:"DM Mono",monospace;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:1.2rem}
+.before-inner p{font-size:1rem;color:rgba(245,240,232,.85);line-height:1.9;margin-bottom:1rem}
+.before-inner p:last-child{margin-bottom:0}
+.reading-main{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 2rem 5rem}
+.layer-header{display:flex;align-items:center;gap:1.5rem;margin-bottom:2.5rem}
+.layer-number{font-family:"Cinzel Decorative",serif;font-size:2.5rem;color:rgba(201,148,58,.2);line-height:1;min-width:2.5rem}
+.layer-info h2{font-family:"Cinzel Decorative",serif;font-size:1.1rem;color:var(--gold);margin-bottom:.2rem}
+.layer-info p{font-family:"DM Mono",monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dim)}
+.layer-bar{height:2px;border-radius:1px;flex:1}
+.layer-bar.len{background:linear-gradient(to right,#1e3a5f,#5a9fd4,transparent)}
+.layer-bar.kip{background:linear-gradient(to right,#5c2d5e,#b07fd4,transparent)}
+.layer-bar.tar{background:linear-gradient(to right,#1a3d2e,#6ab89a,transparent)}
+.layer-bar.ora{background:linear-gradient(to right,#5c2a0e,#d4845a,transparent)}
+.layer-bar.syn{background:linear-gradient(to right,var(--gold-dim),var(--gold),transparent)}
+.reading-block{margin-bottom:5rem}
+.reading-text{margin-top:1rem}
+.reading-section{margin-bottom:2.8rem;padding-bottom:2.8rem;border-bottom:1px solid rgba(201,148,58,.07)}
+.reading-section:last-child{border-bottom:none;padding-bottom:0}
+.section-tag{display:inline-flex;align-items:center;gap:.5rem;font-family:"DM Mono",monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.8rem}
+.section-tag::before{content:"◈"}
+.section-tag.len{color:#5a9fd4}.section-tag.kip{color:#b07fd4}.section-tag.tar{color:#6ab89a}.section-tag.ora{color:#d4845a}
+.section-tag.syn{color:var(--gold)}.section-tag.syn::before{content:"✦"}.section-tag.note{color:rgba(201,148,58,.5)}
+.reading-section h3{font-family:"Cormorant Garamond",serif;font-size:1.25rem;font-weight:500;color:var(--bone);margin-bottom:1.2rem;line-height:1.4}
+.guidebook{border-left:2px solid rgba(201,148,58,.22);padding:1.2rem 1.5rem;margin-bottom:1.8rem;background:rgba(201,148,58,.03);border-radius:0 4px 4px 0}
+.guidebook-label{font-family:"DM Mono",monospace;font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:.7rem}
+.guidebook p{font-size:.94rem;font-style:italic;color:rgba(245,240,232,.7);line-height:1.85;margin-bottom:.8rem}
+.guidebook p:last-child{margin-bottom:0}
+.reading-section p{font-size:.97rem;color:rgba(245,240,232,.85);line-height:1.9;margin-bottom:1rem}
+.reading-section p:last-child{margin-bottom:0}
+.reading-section strong{color:var(--bone);font-weight:600}
+.reading-section em{color:var(--gold-light);font-style:italic}
+.callout{border-left:2px solid var(--gold);padding:1rem 1.5rem;margin:1.5rem 0;background:rgba(201,148,58,.04);border-radius:0 4px 4px 0}
+.callout p{font-size:1.02rem!important;font-style:italic;color:var(--bone)!important;margin:0!important;line-height:1.75!important}
+blockquote.card-quote{border-left:2px solid rgba(201,148,58,.4);padding:1rem 1.5rem;margin:1.2rem 0 1.8rem;background:rgba(201,148,58,.03);border-radius:0 4px 4px 0;font-style:italic}
+blockquote.card-quote p{color:rgba(245,240,232,.72)!important;font-size:.92rem;line-height:1.8;margin:0 0 .6rem!important}
+blockquote.card-quote p:last-of-type{margin-bottom:.5rem!important}
+blockquote.card-quote p.card-orientation{color:var(--gold-dim)!important;font-size:.85rem;font-family:"DM Mono",monospace;font-style:normal;letter-spacing:.02em;margin-top:.5rem!important}
+blockquote.card-quote cite{display:block;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,148,58,.45);font-style:normal;font-family:"DM Mono",monospace;margin-top:.6rem}
+.pairs-table{width:100%;border-collapse:collapse;margin:1.5rem 0}
+.pairs-table th{font-family:"DM Mono",monospace;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dim);padding:.5rem .8rem;text-align:left;border-bottom:1px solid rgba(201,148,58,.2)}
+.pairs-table td{padding:.65rem .8rem;color:rgba(245,240,232,.75);border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top;font-size:.88rem;line-height:1.65}
+.pairs-table tr:last-child td{border-bottom:none}
+.pair-cards{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--bone);white-space:nowrap;font-size:.92rem}
+.pair-cards .plus{color:var(--gold-dim);font-weight:300;margin:0 .2rem}
+.ci{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500}
+.ci.len{color:#7ab8e8}.ci.kip{color:#c4a0e0}.ci.tar{color:#8fd4b4}.ci.ora{color:#e8a87a}
+.inner-cols{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin:1.5rem 0 2rem}
+.inner-col h4{font-family:"DM Mono",monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1rem}
+.inner-col.tar h4{color:#6ab89a}.inner-col.ora h4{color:#d4845a}
+.card-line{font-family:"DM Mono",monospace;font-size:.58rem;color:var(--gold-dim);letter-spacing:.1em;margin-bottom:.6rem}
+.card-line em{font-family:"Cormorant Garamond",serif;font-size:.95rem;font-style:italic;color:var(--bone);display:block;margin-top:.15rem}
+footer{position:relative;z-index:1;text-align:center;padding:4rem 2rem 3rem;border-top:1px solid rgba(201,148,58,.1);margin-top:2rem}
+footer .footer-logo{font-family:"Cinzel Decorative",serif;font-size:1.2rem;color:var(--gold);margin-bottom:.5rem}
+footer p{font-family:"DM Mono",monospace;font-size:.6rem;color:rgba(201,148,58,.3);letter-spacing:.2em}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;will-change:opacity,transform}
+.reveal.visible{opacity:1;transform:translateY(0);will-change:auto}
+@media(max-width:700px){.reader-section{grid-template-columns:1fr;gap:2rem}.inner-cols{grid-template-columns:1fr}nav{padding:1rem 1.5rem}.nav-links{display:none}}.deck-opener{position:relative;width:100%;max-width:700px;margin:0 auto 0;overflow:hidden;border-radius:6px;border:1px solid rgba(201,148,58,.18)}.deck-opener img{width:100%;display:block;object-fit:cover;object-position:center 35%;max-height:340px;filter:brightness(.82) saturate(.88)}.deck-opener::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(14,12,10,0) 55%,rgba(14,12,10,.7) 100%)}.deck-opener-label{position:absolute;bottom:.8rem;right:1rem;font-family:"DM Mono",monospace;font-size:.48rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(201,148,58,.55)}
+.spread-photo-wrap{position:relative;margin-bottom:2rem;border-radius:8px;overflow:hidden;border:1px solid rgba(201,148,58,.18);cursor:zoom-in;background:var(--ink)}
+.spread-photo-wrap img{width:100%;display:block;transition:filter .4s;filter:contrast(1.12) saturate(1.18) brightness(.93) sepia(.06)}
+.spread-photo-wrap:hover img{filter:contrast(1.18) saturate(1.28) brightness(.98) sepia(.04)}
+.spread-photo-wrap::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 55%,rgba(14,12,10,.55));pointer-events:none}
+.spread-photo-caption{position:absolute;bottom:0;left:0;right:0;padding:1rem 1.4rem;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;background:linear-gradient(to top,rgba(14,12,10,.75),transparent)}
+.caption-label{font-family:"DM Mono",monospace;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,240,232,.55)}
+.caption-tap{font-family:"DM Mono",monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(201,148,58,.45)}
+.spread-photo-wrap.zoomed{position:fixed;inset:0;z-index:500;border-radius:0;border:none;cursor:zoom-out;display:flex;align-items:center;justify-content:center;background:rgba(10,8,6,.97);margin:0}
+.spread-photo-wrap.zoomed img{width:auto;height:auto;max-width:96vw;max-height:94vh;filter:contrast(1.15) saturate(1.22) brightness(1) sepia(.03);object-fit:contain}
+.spread-photo-wrap.zoomed::after{display:none}
+.spread-photo-wrap.zoomed .spread-photo-caption{display:none}
+.pdf-btn{font-family:"DM Mono",monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dim);background:transparent;border:1px solid rgba(201,148,58,.25);padding:.35rem .8rem;border-radius:2px;cursor:pointer;transition:all .3s;flex-shrink:0}
+.pdf-btn:hover{color:var(--gold);border-color:rgba(201,148,58,.5)}
+@media print{nav,body::before,.starfield,.scroll-cue{display:none!important}.hero{min-height:auto;padding:3rem 2rem 2rem}.reading-main,.reading-block{break-inside:avoid}.reveal{opacity:1!important;transform:none!important}}
+
+.expiry-gate{display:none;position:fixed;inset:0;z-index:9000;background:rgba(8,6,5,.97);
+  flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem}
+.expiry-gate.active{display:flex}
+.expiry-gate-inner{max-width:480px}
+.expiry-icon{font-size:2rem;color:var(--gold);margin-bottom:1.5rem;letter-spacing:.1em}
+.expiry-gate h2{font-family:"Cinzel Decorative",serif;font-size:1.1rem;color:var(--gold);
+  margin-bottom:1rem;letter-spacing:.12em}
+.expiry-gate p{font-family:"DM Mono",monospace;font-size:.65rem;color:rgba(245,240,232,.5);
+  letter-spacing:.12em;line-height:1.9;margin-bottom:2rem}
+.expiry-gate a{font-family:"DM Mono",monospace;font-size:.6rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gold-dim);border:1px solid rgba(201,148,58,.25);
+  padding:.5rem 1.2rem;border-radius:2px;text-decoration:none;transition:all .3s}
+.expiry-gate a:hover{color:var(--gold);border-color:rgba(201,148,58,.5)}
+
+</style>
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+
+<div class="expiry-gate" id="expiryGate">
+  <div class="expiry-gate-inner">
+    <div class="expiry-icon">&#10022;</div>
+    <h2>This Reading Has Closed</h2>
+    <p>Your access window for the Week of April 6th has ended.<br>
+    Reach out to book a new session or revisit a past reading.</p>
+    <a href="mailto:jaylonjackson101@gmail.com">Get in Touch</a>
+  </div>
+</div>
+
+<nav>
+  <a href="#" class="nav-logo">J A Y L O N</a>
+  <ul class="nav-links"><li><a href="#week-reading">Week Ahead</a></li><li><a href="#synthesis">Synthesis</a></li></ul>
+  <button class="pdf-btn" onclick="window.print()">↓ Save PDF</button>
+</nav>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <p class="hero-eyebrow">Week Ahead</p>
+  <p class="hero-greeting">prepared with care for</p>
+  <h1 class="hero-name">Armani</h1>
+  <p class="hero-sub">Cards &nbsp;&middot;&nbsp; April 6 2026</p>
+  <div class="hero-date-pill">April 6 2026 &nbsp;&middot;&nbsp; Prepared by Jaylon</div>
+  <div class="scroll-cue"><span>Read On</span><div class="scroll-line"></div></div>
+</section>
+<section class="deck-opener">
+  <img src="deck-opener.jpg" alt="The decks">
+  <span class="deck-opener-label">Prepared by Jaylon</span>
+</section>
+<section class="reader-section reveal">
+  <div class="sigil-wrap">
+    <div class="sigil-ring">
+      <div class="orbit" style="--speed:12s"><div class="orbit-dot"></div></div>
+      <div class="orbit" style="--speed:20s;width:180px;height:180px;top:20px;left:20px"><div class="orbit-dot" style="background:#b07fd4;box-shadow:0 0 8px #b07fd4"></div></div>
+      <div class="sigil-inner">
+        <div class="sigil-initial">J</div>
+        <div class="sigil-title">Reader</div>
+      </div>
+    </div>
+  </div>
+  <div class="reader-bio">
+    <h2>Jaylon</h2>
+    <div class="reader-tag">Lenormand &middot; Kipper &middot; Tarot &middot; Oracle</div>
+    <p>I read with multiple decks because each one shows a different layer of what's happening &mdash; Tarot speaks to the inner experience, Lenormand maps the external terrain, and Kipper tracks the people and events moving around you. I'll walk you through what each deck is doing as we go, so this reading makes sense to you rather than just being a list of things I see. If something needs context, I'll give it.</p>
+    <div class="deck-badges"><span class="deck-badge sib">sib</span></div>
+  </div>
+</section>
+
+<div class="section-divider"><div class="divider-line"></div><div class="divider-glyph">✦</div><div class="divider-line"></div></div>
+
+<div style="position:relative;z-index:1;max-width:900px;margin:0 auto 3rem;padding:0 2rem">
+<div class="spread-photo-wrap reveal">
+  <img src="face-down.jpg" alt="Cards face down &mdash; key influence revealed" loading="lazy">
+  <div class="spread-photo-caption">
+    <span class="caption-label">The Spread &middot; Key Influence Revealed</span>
+    <span class="caption-tap">Tap to enlarge</span>
+  </div>
+</div>
+</div>
+
+<main class="reading-main">
+
+
+<div class="reading-block reveal" id="week-reading">
+<div class="layer-header">
+<div class="layer-number">00</div>
+<div class="layer-info"><h2>Key Influence &mdash; What's Beneath the Week</h2><p>falseness reversed &middot; the background frequency &middot; what spirit wants you to hold</p></div>
+<div class="layer-bar ora"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag ora">Key Influence</div>
+<h3>The Lie That's Losing Its Grip</h3>
+
+<p>Armani, welcome. Before we walk through the week itself, I want to set the stage with something that came up as the background energy for everything we're about to look at. This card sat at the bottom of the deck, which in the Sibilla system means it's the quiet undercurrent, the thing operating beneath the surface of every position we'll read. Think of it like the weather behind the weather.</p>
+
+<p>The card is <strong>Falseness, reversed</strong>. Now, let me explain how reversals work in this deck, because it's different from Tarot. In the Sibilla, when a negative card shows up reversed, it doesn't flip to positive. Instead, it softens. The energy is still present, but it's passing, shrinking, becoming easier to detect. So upright Falseness would be active deception, something genuinely not what it seems, a situation or person wearing a convincing mask. Reversed, that mask is slipping. The deception is smaller in scale, or it's becoming transparent enough that you can see through it.</p>
+
+<p>What this tells me is that the whole week carries a background energy of <em>clarification</em>. Something that wasn't fully honest, whether that's a situation you've been told a certain story about, a dynamic where someone (possibly you) has been performing something that doesn't match the interior reality, or simply a self-deception you've been carrying, all of that is losing its power this week. The lie isn't gone yet, but it's getting harder to maintain. You may find yourself noticing things more clearly than you have been, or feeling less willing to pretend.</p>
+
+<div class="callout"><p>Hold this as your lens: the week is asking you to see things as they actually are, not as you've been told they are, and not as you've been telling yourself they are.</p></div>
+</div>
+</div>
+</div>
+
+
+<div style="position:relative;z-index:1;max-width:900px;margin:0 auto 3rem;padding:0 2rem">
+<div class="spread-photo-wrap reveal">
+  <img src="face-up.jpg" alt="Full spread &mdash; all cards revealed" loading="lazy">
+  <div class="spread-photo-caption">
+    <span class="caption-label">The Full Spread &middot; Cards Revealed</span>
+    <span class="caption-tap">Tap to enlarge</span>
+  </div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-pos1">
+<div class="layer-header">
+<div class="layer-number">01</div>
+<div class="layer-info"><h2>Theme &mdash; The Shape of the Week</h2><p>death &middot; old woman &middot; sighs</p></div>
+<div class="layer-bar len"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag len">Sibilla &middot; Position 1</div>
+<h3>Something Old Is Ending, and the Ache of It Is Real</h3>
+
+<p>Let me walk you through how I read a three-card group in this system. Each position gets three cards, and I look at them three ways: individually left to right (the surface story), then the outer two cards framing the center (the center card is the pivot, the crux of the position), and then in pairs (first + second, then second + third) to see cause and effect. Then I blend all three lenses. It sounds like a lot, but it moves fast once you see it in action.</p>
+
+<p>Your theme cards are <strong>Death</strong>, <strong>Old Woman</strong>, and <strong>Sighs</strong>. All upright.</p>
+
+<p>Left to right, the surface narrative: a major transition or ending (<strong>Death</strong>), connected to an established older female figure or a long-standing situation that resists change (<strong>Old Woman</strong>), and the quiet longing or grief that comes from wanting something you don't yet have, or mourning something you're releasing (<strong>Sighs</strong>). If you're familiar with Tarot's Death card, the Sibilla version carries a similar meaning: transformation, necessary endings, the closing of a chapter. It's rarely literal. But unlike Tarot's Death, which often emphasizes the rebirth on the other side, the Sibilla's Death just names the ending itself and asks you to sit with it.</p>
+
+<p>The center card, the pivot, is <strong>Old Woman</strong>. She's framed by Death on one side and Sighs on the other. This tells me the crux of your week's energy is something <em>old</em>, something with deep roots, something that has been the way it's been for a long time. It could be a literal older woman in your life, a grandmother figure, a matriarch, someone over sixty. Or it could be an old pattern, an old arrangement, an old way of being that has simply been in place so long it feels permanent. The framing says: this old thing is undergoing a transformation (Death), and there is genuine longing wrapped around it (Sighs).</p>
+
+<p>The pairs: Death + Old Woman says the transformation is happening <em>to</em> or <em>through</em> this established energy. Something that has resisted change for a long time is finally shifting. Old Woman + Sighs says that this long-standing thing carries an ache, a quiet grief, a yearning quality. This isn't dramatic pain. Sighs is more like a long exhale, the kind of sadness that sits in your chest without shouting.</p>
+
+<div class="callout"><p>The week's overarching shape is a necessary ending tied to something deeply established in your life. There is grief in it, but it's the grief of release, not destruction. Something old is finally, quietly, moving.</p></div>
+
+<div class="guidebook"><div class="guidebook-label">Sibilla Note</div><p>Old Woman as a person card can represent a specific woman 60+ in the querent's life. If someone comes to mind, trust that. If not, read her as the energy of long-standing situations finally being asked to shift.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-pos2">
+<div class="layer-header">
+<div class="layer-number">02</div>
+<div class="layer-info"><h2>Positive Influences &mdash; Where Support Lives</h2><p>letter &middot; widower &middot; lord reversed</p></div>
+<div class="layer-bar len"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag len">Sibilla &middot; Position 2</div>
+<h3>News Arrives Through Someone Who Has Known Loss</h3>
+
+<p>This position shows where the week wants to <em>help</em> you. These are the supports available, the doors that open, the energies working in your favor. That said, when cards here show up reversed, it means the support is still real but it may be delayed or complicated. You have one reversal here, so the help is mostly accessible.</p>
+
+<p>The cards: <strong>Letter</strong> (upright), <strong>Widower</strong> (upright), and <strong>Lord reversed</strong>.</p>
+
+<p><strong>Letter</strong> is awaited news, a communication, something arriving that changes the picture. Think of it as the Ace of Swords in Tarot terms, that moment of clarity cutting through, except in the Sibilla it's specifically about information arriving from outside you, something you receive rather than generate. <strong>Widower</strong> is a person card: an older man, sixty or above, marked by loss and grief. He's emotionally solitary, withdrawn by long habit, someone who rarely asks for what he needs. Upright, he's not hostile, just guarded and deeply private. <strong>Lord reversed</strong> is another person card: normally a wealthy or established older man, a patron figure, material support. Reversed, his energy is complicated. The resources or backing he represents may come with strings, or his attention may be directed more toward his own interests than yours.</p>
+
+<p>The center card, the pivot, is <strong>Widower</strong>. He's framed by news arriving (Letter) and complicated material support (Lord reversed). This tells me: the support this week comes <em>through</em> or <em>from</em> a man who carries grief, someone older who has been through significant loss. He may reach out, or you may receive word connected to him. The Letter suggests this isn't a casual interaction. Something is being communicated that matters.</p>
+
+<p>The pairs tell it clearly: Letter + Widower says news connected to this grieving older man. Widower + Lord reversed says his material support or practical influence is present but compromised somehow. Maybe he wants to help but can't fully, or the help he offers is filtered through his own limitations and self-interest.</p>
+
+<div class="callout"><p>Your support this week comes in the form of communication from or about an older man who carries real weight from past losses. The material dimension of this support is complicated, but the information itself is genuinely valuable. Receive the news even if the messenger is imperfect.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-pos3">
+<div class="layer-header">
+<div class="layer-number">03</div>
+<div class="layer-info"><h2>Negative Influences &mdash; Where Friction Lives</h2><p>love reversed &middot; constancy &middot; malady</p></div>
+<div class="layer-bar len"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag len">Sibilla &middot; Position 3</div>
+<h3>A Bond Under Strain That's Making Something Sick</h3>
+
+<p>This position names the difficulty, the friction, the places where the week pushes back against you. Not everything here is catastrophic. Sometimes this position just points to where energy gets stuck or where something needs honest attention. Let's look.</p>
+
+<p>The cards: <strong>Love reversed</strong>, <strong>Constancy</strong> (upright), and <strong>Malady</strong> (upright).</p>
+
+<p><strong>Love</strong> upright in the Sibilla is deep lasting feelings, great affection meant to endure. Reversed, it speaks to the ending of a long relationship, or coldness, or an emotional door closing. This isn't casual dislike. This is the withdrawal or deterioration of something that was once genuinely deep. <strong>Constancy</strong> is the quality of lasting, the will to hold through difficulty. Upright, it's steadfastness. In this position, though, surrounded by these particular cards, constancy becomes the thing that makes the friction <em>stick</em>. Because someone, or something, is stubbornly holding on. <strong>Malady</strong> is illness, stagnation, something blocked at its root. Not a passing cold. Something that has settled in and isn't moving.</p>
+
+<p>The center card is <strong>Constancy</strong>, and this is important. It means the <em>core</em> of this week's difficulty isn't the love dying or the illness. It's the holding on. The refusal to let go even when something has fundamentally changed. Love reversed and Malady frame Constancy on either side, telling us: what once was deep affection has cooled (Love reversed), and the determination to maintain it anyway, to keep holding what has shifted, is creating stagnation, blockage, something unhealthy (Malady).</p>
+
+<p>The pairs: Love reversed + Constancy says a fading bond that someone is trying to keep stable through sheer will. Constancy + Malady says that same determination to hold is making something sick. The steadfastness isn't noble here. It's causing harm.</p>
+
+<div class="callout"><p>The friction this week isn't about something falling apart. It's about something that has already changed, and the refusal to acknowledge that change is creating stagnation. Loyalty to what was can become an illness when it refuses to let what is simply be what it is.</p></div>
+
+<div class="guidebook"><div class="guidebook-label">Connection to Theme</div><p>Notice how this echoes Position 1. The Theme said something old is ending and there's grief in it. Here we see the <em>resistance</em> to that ending. Death is asking for release; Constancy is gripping tighter. This tension is the week's central dynamic.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-pos4">
+<div class="layer-header">
+<div class="layer-number">04</div>
+<div class="layer-info"><h2>A Surprise &mdash; What Arrives Unexpectedly</h2><p>gift &middot; despair &middot; prison</p></div>
+<div class="layer-bar len"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag len">Sibilla &middot; Position 4</div>
+<h3>Something Good Arrives and Immediately Gets Complicated</h3>
+
+<p>This position is about what you don't see coming. Upright cards in this spot hit directly, without warning, and all three here are upright, so whatever this surprise is, it lands fully.</p>
+
+<p>The cards: <strong>Gift</strong>, <strong>Despair</strong>, and <strong>Prison</strong>.</p>
+
+<p><strong>Gift</strong> in the Sibilla is genuinely good: unexpected fortune, something propitious arriving. It's not earned or scheduled. It just shows up. <strong>Despair</strong>, and I want to be precise here, is not general despair. The card's full Italian name is <em>Disparato per gelosia</em>, desperate <em>due to jealousy</em>. This is wounded-ego energy, the kind of crisis that comes from feeling overlooked, outpaced, or replaced. <strong>Prison</strong> is restriction, feeling trapped, confined circumstances with no obvious exit.</p>
+
+<p>The center card is <strong>Despair</strong>. Framed by a genuine gift and a cage. This is striking. The pivot of the surprise isn't the good thing or the restriction. It's the jealousy response. Something good arrives this week, something real and unexpected, and it triggers a jealousy-driven crisis in someone (possibly you, possibly someone connected to you), and that crisis creates a feeling of being trapped.</p>
+
+<p>The pairs: Gift + Despair says the good fortune itself provokes the jealous reaction. Someone receives something good and someone else spirals. Or you receive something good and your own wounded ego finds a way to turn it into proof of inadequacy rather than celebration. Despair + Prison says the jealousy leads directly to confinement, a sense of being stuck, boxed in, unable to move.</p>
+
+<div class="callout"><p>The surprise this week is double-edged: something genuinely good arrives, but it stirs up jealousy, either yours or someone else's, and that jealousy creates a trap. Watch for the moment when good news makes someone feel worse instead of better. That's the surprise announcing itself.</p></div>
+
+<div class="guidebook"><div class="guidebook-label">Mechanism</div><p>All three cards upright in a Surprise position means this lands with full force. There's no softening. The gift is real, the jealousy is real, the confinement is real. Preparation is your only buffer.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-pos5">
+<div class="layer-header">
+<div class="layer-number">05</div>
+<div class="layer-info"><h2>Challenge / Lesson &mdash; What the Week Asks of You</h2><p>sorrow reversed &middot; priest &middot; messenger reversed</p></div>
+<div class="layer-bar len"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag len">Sibilla &middot; Position 5</div>
+<h3>Grief That's Passing, a Spiritual Authority, and a Message That Hasn't Landed</h3>
+
+<p>This position names the growth edge, the thing the week is actively teaching you whether or not you signed up for the class. It's not punishment. It's curriculum.</p>
+
+<p>The cards: <strong>Sorrow reversed</strong>, <strong>Priest</strong> (upright), and <strong>Messenger reversed</strong>.</p>
+
+<p><strong>Sorrow</strong> in the Sibilla is direct grief, emotional weight. Unlike some other systems, Sibilla's Sorrow doesn't tell you where the grief came from or where it's going. It just names its presence. Reversed, the sorrow is still here but reduced, passing, not permanent. <strong>Priest</strong> upright is spiritual authority, ritual, devotion, someone who holds sacred space. This can be a literal person in a spiritual role or the energy of faith, tradition, and structured belief. <strong>Messenger reversed</strong> is a person card: someone whose job it is to carry information between parties. Reversed, the news is delayed or distorted in transit. Something that was supposed to reach you, or reach someone else through you, isn't arriving clean.</p>
+
+<p>The center card is <strong>Priest</strong>. He's framed by passing grief and garbled communication. The lesson lives in him. The week is asking you to find or hold some kind of spiritual grounding, some devotion to something larger than the immediate emotional turbulence, and to do this <em>while</em> grief is receding on one side and communication is failing on the other. The Priest stands between imperfect information and fading pain, holding steady.</p>
+
+<p>The pairs: Sorrow reversed + Priest says the grief that's easing is connected to something faith-related, or that spiritual practice is part of what's helping the grief pass. Priest + Messenger reversed says there's something the Priest figure knows or represents that isn't getting through to you clearly. The message is there. The delivery system is broken.</p>
+
+<div class="callout"><p>The lesson: your grief is passing, but the clarity you need to complete that passage is being delayed or distorted. Don't wait for perfect information. Find your grounding in faith, practice, devotion, whatever your version of the sacred is, and let that carry you while the messages sort themselves out.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-pos6">
+<div class="layer-header">
+<div class="layer-number">06</div>
+<div class="layer-info"><h2>Advice &mdash; What to Carry This Week</h2><p>thought &middot; doctor &middot; lover</p></div>
+<div class="layer-bar len"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag len">Sibilla &middot; Position 6</div>
+<h3>Think It Through, Trust the Expert, Stay Open to the One Who Shows Up</h3>
+
+<p>This is the action position, what the cards are actively telling you to <em>do</em>. All three upright, which means the advice is direct and unblocked.</p>
+
+<p>The cards: <strong>Thought</strong>, <strong>Doctor</strong>, and <strong>Lover</strong>.</p>
+
+<p>Let me flag something about <strong>Thought</strong>. In this system, Thought doesn't automatically mean <em>your</em> thoughts. It represents ideas, doubts, plans circling in a situation, and they could belong to anyone. As advice, though, it's pointing more directly at you: think before you act, consider carefully, let the ideas circulate before you commit. <strong>Doctor</strong> is a person card: professional authority, someone who diagnoses clearly, competent and trustworthy and calm under pressure. This isn't about literal medical care (unless it is, in which case, don't delay). It's about seeking or trusting someone who has expertise you don't, someone who can look at a situation and tell you plainly what's going on. <strong>Lover</strong> is another person card: an unmarried man roughly 30 to 45, romantically significant. Upright, he's warm, present, arriving with positive energy.</p>
+
+<p>The center card is <strong>Doctor</strong>. He's the pivot of the advice. Framed by careful thought on one side and a warm romantic figure on the other, the Doctor says: <em>this week needs clear diagnosis more than it needs emotion</em>. The Thought says think. The Doctor says consult someone who knows. The Lover says stay emotionally open and receptive to someone who's showing up for you. But the Doctor in the middle says: let clarity lead.</p>
+
+<p>The pairs: Thought + Doctor says careful analysis paired with expert counsel. Don't just think about it alone. Bring your thinking to someone competent and let them refine it. Doctor + Lover says there's something to be diagnosed or clarified in a romantic connection, or that a romantically significant man is someone you can trust this week in a practical, clear-eyed way.</p>
+
+<div class="callout"><p>The advice is layered: slow your thinking down, seek expert input on what's actually going on, and don't shut the door on the person who's arriving with warmth. Head first, then heart. Not heart instead of head.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-pos7">
+<div class="layer-header">
+<div class="layer-number">07</div>
+<div class="layer-info"><h2>Synthesis &mdash; How the Week Lands</h2><p>merchant &middot; friend &middot; wedding</p></div>
+<div class="layer-bar len"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag len">Sibilla &middot; Position 7</div>
+<h3>Something Solid Takes Shape Between Good People</h3>
+
+<p>This is where the week arrives at the end. Not what it asks of you, not what challenges you, but how it all <em>settles</em>. These three cards read together on their own terms, as the final picture. All upright.</p>
+
+<p>The cards: <strong>Merchant</strong>, <strong>Friend</strong>, and <strong>Wedding</strong>.</p>
+
+<p><strong>Merchant</strong> is a person card associated with work, career, practical dealings, business arrangements. He represents the professional dimension of life, things that function, structures that produce. <strong>Friend</strong> is a female person card: a generous, supportive ally who acts from goodwill without asking for return. Upright, she is exactly what she appears to be. <strong>Wedding</strong> in the Sibilla isn't only marriage. It's union, commitment, any formal agreement or contract. Something being made official, two things joined in a way that holds.</p>
+
+<p>The center card is <strong>Friend</strong>. She's the heart of how the week lands. Framed by a practical business energy (Merchant) and a commitment being formalized (Wedding), the Friend says: the week resolves through genuine alliance, through a woman who shows up with real goodwill, and through something being made official or solidified in the professional realm.</p>
+
+<p>The pairs: Merchant + Friend says a business or practical connection supported by a genuine female ally. This might be a colleague, a business partner, someone who advocates for you professionally out of real loyalty. Friend + Wedding says this supportive woman is connected to a commitment, an agreement, something being sealed. She may facilitate it, celebrate it, or be party to it.</p>
+
+<div class="callout"><p>After all the grief, the holding on, the jealousy, and the stalled messages, the week lands somewhere surprisingly solid. A professional arrangement comes together. A loyal woman plays a key role. Something gets committed to, formally and genuinely. The ending is better than the middle.</p></div>
+
+<div class="guidebook"><div class="guidebook-label">Reading the Arc</div><p>The week moves from Death (necessary ending) through resistant grief, jealousy, and communication breakdown, and arrives at Merchant + Friend + Wedding: practical partnership, real loyalty, formalized commitment. The old thing needed to end so this new structure could take shape. The synthesis cards confirm the transformation the Theme promised.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="week-oracle">
+<div class="layer-header">
+<div class="layer-number">08</div>
+<div class="layer-info"><h2>Citadel Oracle &mdash; The Energies to Work With</h2><p>the miser &middot; the vengeance &middot; what to cultivate and what to manage</p></div>
+<div class="layer-bar ora"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag ora">Energy to Cultivate</div>
+<h3>The Miser &mdash; Count What You Actually Have</h3>
+
+<blockquote class="card-quote"><p>The Miser of the Citadel counts their holdings at night when everyone else is asleep. They do not count from abundance -- they count from fear. Every coin, every resource, every advantage is held tightly because the terror of loss has displaced the possibility of trust. The hoard grows, but the Miser does not feel rich. They feel perpetually on the edge of not having enough.</p><p class="card-orientation">UPRIGHT: A scarcity mindset is governing your decisions right now, and it is costing you more than generosity would. What would it mean to trust that there is enough? What would you do differently if you operated from abundance rather than fear of loss?</p><cite>&mdash; The Citadel Oracle</cite></blockquote>
+
+<p>Now, the Citadel Oracle works a little differently from the Sibilla. It names archetypes, roles, energies you're being asked to step into or contend with. The "Energy to Cultivate" card isn't telling you to <em>become</em> the Miser. It's pointing at the Miser's core skill and saying: there is something here you need this week.</p>
+
+<p>And what the Miser knows is <em>exactly what they have</em>. They've counted. They know every resource, every asset, every advantage down to the last coin. The shadow of this, the scarcity fear, the hoarding, that's what to avoid. But the skill itself, careful resource management, knowing your actual position, not spending from hope, is exactly what this week requires. Look at what showed up in the Sibilla: Death, endings, an older situation transforming, a Gift that triggers jealousy, a professional commitment forming at the end. This is a week of transition, and in transitions, you need to know precisely what you're working with. Not what you wish you had. Not what you're afraid of losing. What you actually, concretely, possess.</p>
+
+<p>The Constancy card in Position 3 showed someone holding on from sheer will. The Miser's shadow does the same, gripping resources out of fear. The week is asking you to <em>count clearly</em> without <em>clutching</em>. Know your inventory. Trust that it's enough. Then let the transition do what it needs to do.</p>
+
+<div class="callout"><p>Cultivate the Miser's precision without the Miser's fear. Know exactly what you have. Then open your hands.</p></div>
+</div>
+
+<div class="reading-section">
+<div class="section-tag ora">Energy to Understand / Manage</div>
+<h3>The Vengeance &mdash; The Score That Doesn't Need Settling</h3>
+
+<blockquote class="card-quote"><p>The tavern is busy, full of conversation and the bustle of travellers settling for the evening. One figure catches your attention: someone who is not drinking, talking, nor engaging with the rest. They say nothing, but you know that they have a deadly score to settle. When the opportunity presents itself, will they let the past consume them, or will they finally accept things for what they are and move on?</p><p class="card-orientation">UPRIGHT: The Vengeance has a choice, and so do you. Though the chains of anger have been giving you the energy to move forward, their weight will eventually drown you -- it is time to address those negative feelings and find a healthier way to sustain your drive. Letting go of bad emotional patterns might leave you feeling empty and drained, but you can fill that void with healthier adjustments that will help you build more positive relationships.</p><cite>&mdash; The Citadel Oracle</cite></blockquote>
+
+<p>The "Understand / Manage" card points at the shadow operating around the challenges, the energy that's in play whether you invited it or not. This one needs to be worked <em>with</em>, not just fought against.</p>
+
+<p>The Vengeance names something the Sibilla already showed you. Look at Position 4: Gift + Despair + Prison. Something good arrives and immediately triggers jealousy-driven crisis. Despair in the Sibilla is specifically wounded-ego energy, the feeling of being outpaced or replaced. The Vengeance takes that same wound and adds a blade to it. There is someone in the dynamic this week, possibly you, who has a score to settle. Not necessarily a dramatic vendetta. Sometimes vengeance is quieter than that. It's the part of you that keeps track of who hurt you, who got what you didn't, who failed to show up. It's the figure in the tavern who isn't drinking and isn't talking but is watching, waiting, calculating.</p>
+
+<p>The Oracle's message is clear: that anger has been fuel. It's been <em>driving</em> something. Maybe it drove you to work harder, to protect yourself more fiercely, to refuse to be overlooked. But the chains of anger are getting heavier than the momentum they provide. This week, especially as something old ends (Position 1) and something new formalizes (Position 7), you have a choice about whether to carry the old score into the new structure.</p>
+
+<p>The Priest in Position 5 stands in the center of the lesson for a reason. He represents faith, devotion, something sacred. The Vengeance is the opposite energy: the refusal to release, the insistence that justice must look like punishment. The week is asking you to choose the Priest over the Vengeance. Not because the anger was wrong, but because the new thing forming, that Merchant + Friend + Wedding energy, cannot be built on a foundation of scores being settled.</p>
+
+<div class="callout"><p>The anger was real. What happened to you was real. But carrying it forward will poison the very thing that's trying to take shape this week. You don't have to forgive on command. You just have to set the blade down long enough to sign the new agreement with clean hands.</p></div>
+</div>
+</div>
+</div>
+
+<div class="reading-block reveal" id="synthesis">
+<div class="layer-header">
+<div class="layer-number">✦</div>
+<div class="layer-info"><h2>Full Synthesis &mdash; The Week as a Whole</h2><p>all positions woven &middot; the story beneath the story</p></div>
+<div class="layer-bar syn"></div>
+</div>
+<div class="reading-text">
+<div class="reading-section">
+<div class="section-tag syn">✦ Synthesis</div>
+<h3>The Old Contract Ends. The New One Awaits Your Signature.</h3>
+
+<p>Armani, here's the full picture.</p>
+
+<p>This week opens under Falseness reversed: something dishonest is losing its grip, becoming transparent, getting easier to see through. That's the lens for everything. The truth is emerging whether anyone is ready for it or not.</p>
+
+<p>The shape of the week is an ending. Death and Old Woman and Sighs tell you plainly: something old, something that has been in place a long time and has deep roots, is undergoing its final transformation. There is real grief in this. Not dramatic grief, but the quiet, chest-heavy kind, the long exhale of releasing what you've known. This might be a relationship, a living situation, a family dynamic, a way of seeing yourself. The Old Woman says it's been here longer than you might realize.</p>
+
+<p>The difficulty is that someone, possibly you, is gripping what's already changed. Love reversed paired with Constancy paired with Malady is the clearest warning in the reading: holding onto what has already cooled is making something sick. The affection faded. The loyalty didn't. And that mismatch is creating stagnation, blockage, a kind of spiritual illness that comes from forcing life to be what it was instead of what it is. The Miser's shadow operates here too, clutching what's familiar out of fear that there won't be enough on the other side.</p>
+
+<p>Midweek, something genuinely good arrives. The Gift is real. But it detonates a jealousy response, Despair, that leads to feeling caged, Prison. This is where the Vengeance energy lives. The good fortune pokes a wound, and the wound says <em>but what about what I lost, what about what was taken, what about what I never got</em>. If you're not careful, the gift becomes the trigger for the very confinement you're trying to escape. Watch for the moment when something good makes you or someone near you feel worse. That's the moment to choose differently.</p>
+
+<p>The lesson asks you to find spiritual grounding, the Priest, while grief is easing and messages are garbled. You won't have perfect information this week. The Messenger is reversed. Something isn't getting through clearly. The advice says: think carefully, consult someone competent, and stay open to the warm presence that's showing up for you. The Doctor in the center of the advice position is the week's most
+</main>
+<footer>
+  <div class="footer-logo">J A Y L O N</div>
+  <p>Prepared with intention &nbsp;&middot;&nbsp; April 6 2026</p>
+</footer>
+<script>
+const sf=document.getElementById('starfield');
+for(let i=0;i<80;i++){const s=document.createElement('div');s.className='star';s.style.cssText='left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;--dur:'+(3+Math.random()*6)+'s;--delay:'+Math.random()*5+'s;--bright:'+(0.3+Math.random()*0.5);sf.appendChild(s);}
+const _obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');_obs.unobserve(e.target);}}),{threshold:0,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>_obs.observe(el));
+document.querySelectorAll('.spread-photo-wrap img').forEach(img=>{img.addEventListener('click',e=>{e.stopPropagation();img.closest('.spread-photo-wrap').classList.add('zoomed');});});
+document.querySelectorAll('.spread-photo-wrap').forEach(w=>{w.addEventListener('click',e=>{if(e.target===w)w.classList.remove('zoomed');});});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.spread-photo-wrap.zoomed').forEach(w=>w.classList.remove('zoomed'));});
+
+
+(function(){
+  // Expires April 16 2026 at midnight ET
+  var expiry = new Date('2026-04-16T04:00:00Z'); // midnight ET = 04:00 UTC
+  if(new Date() > expiry){
+    var gate = document.getElementById('expiryGate');
+    if(gate){ gate.classList.add('active'); document.body.style.overflow='hidden'; }
+  }
+})();
+
+</script>
+</body>
+</html>
