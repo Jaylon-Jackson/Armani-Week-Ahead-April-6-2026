@@ -145,6 +145,29 @@ footer p{font-family:"DM Mono",monospace;font-size:.6rem;color:rgba(201,148,58,.
   padding:.5rem 1.2rem;border-radius:2px;text-decoration:none;transition:all .3s}
 .expiry-gate a:hover{color:var(--gold);border-color:rgba(201,148,58,.5)}
 
+
+.closing-block{position:relative;z-index:1;max-width:900px;margin:0 auto 0;padding:3rem 2rem 4rem;border-top:1px solid rgba(201,148,58,.12)}
+.closing-inner{background:linear-gradient(135deg,rgba(201,148,58,.06),rgba(92,45,94,.04));border:1px solid rgba(201,148,58,.18);border-radius:4px;padding:2.8rem;position:relative;overflow:hidden}
+.closing-inner::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--plum),var(--gold),var(--rust))}
+.closing-label{font-family:"DM Mono",monospace;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:2rem}
+.timer-display{display:flex;gap:1.5rem;justify-content:center;margin-bottom:2.2rem;flex-wrap:wrap}
+.timer-unit{display:flex;flex-direction:column;align-items:center;min-width:52px}
+.timer-digit{font-family:"Cinzel Decorative",serif;font-size:clamp(1.6rem,5vw,2.4rem);color:var(--gold);line-height:1;text-shadow:0 0 20px rgba(201,148,58,.3)}
+.timer-sep{font-family:"Cinzel Decorative",serif;font-size:clamp(1.4rem,4vw,2rem);color:rgba(201,148,58,.3);align-self:flex-start;padding-top:.1rem}
+.timer-word{font-family:"DM Mono",monospace;font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dim);margin-top:.4rem}
+.timer-deadline{font-family:"DM Mono",monospace;font-size:.62rem;letter-spacing:.15em;text-align:center;color:rgba(245,240,232,.45);margin-bottom:2.5rem}
+.timer-deadline strong{color:rgba(201,148,58,.65);font-weight:400}
+.save-section{border-top:1px solid rgba(201,148,58,.1);padding-top:2rem;margin-top:.5rem}
+.save-section-label{font-family:"DM Mono",monospace;font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:1.4rem}
+.save-methods{display:flex;flex-direction:column;gap:1.2rem}
+.save-method{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.save-method-icon{font-family:"DM Mono",monospace;font-size:.55rem;letter-spacing:.1em;color:var(--gold);border:1px solid rgba(201,148,58,.25);border-radius:2px;padding:.25rem .5rem;white-space:nowrap;margin-top:.15rem}
+.save-method-text{font-family:"DM Mono",monospace;font-size:.62rem;color:rgba(245,240,232,.6);line-height:1.75;letter-spacing:.04em}
+.save-method-text strong{color:rgba(245,240,232,.85);font-weight:500}
+.save-note{margin-top:1.8rem;padding:.9rem 1.2rem;border-left:2px solid rgba(201,148,58,.25);background:rgba(201,148,58,.03);border-radius:0 4px 4px 0}
+.save-note p{font-family:"DM Mono",monospace;font-size:.58rem;color:rgba(245,240,232,.4);letter-spacing:.06em;line-height:1.8;margin:0}
+@media print{.closing-block{display:none}}
+
 </style>
 </head>
 <body>
@@ -498,6 +521,81 @@ footer p{font-family:"DM Mono",monospace;font-size:.6rem;color:rgba(201,148,58,.
 <p>Midweek, something genuinely good arrives. The Gift is real. But it detonates a jealousy response, Despair, that leads to feeling caged, Prison. This is where the Vengeance energy lives. The good fortune pokes a wound, and the wound says <em>but what about what I lost, what about what was taken, what about what I never got</em>. If you're not careful, the gift becomes the trigger for the very confinement you're trying to escape. Watch for the moment when something good makes you or someone near you feel worse. That's the moment to choose differently.</p>
 
 <p>The lesson asks you to find spiritual grounding, the Priest, while grief is easing and messages are garbled. You won't have perfect information this week. The Messenger is reversed. Something isn't getting through clearly. The advice says: think carefully, consult someone competent, and stay open to the warm presence that's showing up for you. The Doctor in the center of the advice position is the week's most
+
+<div class="closing-block">
+<div class="closing-inner">
+
+  <div class="closing-label">Time Remaining to View This Reading</div>
+
+  <div class="timer-display">
+    <div class="timer-unit">
+      <span class="timer-digit" id="t-days">--</span>
+      <span class="timer-word">days</span>
+    </div>
+    <span class="timer-sep">:</span>
+    <div class="timer-unit">
+      <span class="timer-digit" id="t-hours">--</span>
+      <span class="timer-word">hours</span>
+    </div>
+    <span class="timer-sep">:</span>
+    <div class="timer-unit">
+      <span class="timer-digit" id="t-mins">--</span>
+      <span class="timer-word">minutes</span>
+    </div>
+    <span class="timer-sep">:</span>
+    <div class="timer-unit">
+      <span class="timer-digit" id="t-secs">--</span>
+      <span class="timer-word">seconds</span>
+    </div>
+  </div>
+
+  <p class="timer-deadline">This reading closes <strong>Thursday, April 16 &middot; Midnight</strong></p>
+
+  <div class="save-section">
+    <div class="save-section-label">How to Save Your Reading</div>
+    <div class="save-methods">
+
+      <div class="save-method">
+        <span class="save-method-icon">01 &mdash; Best</span>
+        <div class="save-method-text">
+          <strong>Print to PDF.</strong> Tap &ldquo;&darr;&nbsp;Save PDF&rdquo; in the top-right corner.
+          Your phone will open a print dialog &mdash; tap the share icon and choose
+          <strong>Save to Files</strong>. This saves the full reading as a PDF to your phone,
+          images included, readable anytime even without internet.
+        </div>
+      </div>
+
+      <div class="save-method">
+        <span class="save-method-icon">02 &mdash; Quick</span>
+        <div class="save-method-text">
+          <strong>Screenshot by section.</strong> On iPhone, press the
+          <strong>side button + volume up</strong> at the same time.
+          Tap the thumbnail that appears to mark it up or crop it before saving.
+          Scroll through and screenshot each section that matters most to you.
+        </div>
+      </div>
+
+      <div class="save-method">
+        <span class="save-method-icon">03 &mdash; Backup</span>
+        <div class="save-method-text">
+          <strong>Copy the link.</strong> The URL for this page doesn&rsquo;t change while
+          it&rsquo;s live. Copy it from Safari and send it to yourself in a note or text
+          so you can return quickly before the deadline.
+          After April 16th, the link will close &mdash; saving the PDF is still the most reliable option.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="save-note">
+      <p>After April 16th, this page will display a closing message and the reading will no longer be accessible.
+      If you&rsquo;d like to revisit a past reading or book a new session, reach out directly.</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
 </main>
 <footer>
   <div class="footer-logo">J A Y L O N</div>
@@ -520,6 +618,39 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelect
     var gate = document.getElementById('expiryGate');
     if(gate){ gate.classList.add('active'); document.body.style.overflow='hidden'; }
   }
+})();
+
+
+(function(){
+  var expiry = new Date('2026-04-16T04:00:00Z');
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    var now = new Date();
+    var diff = expiry - now;
+    if(diff <= 0){
+      ['t-days','t-hours','t-mins','t-secs'].forEach(function(id){
+        var el = document.getElementById(id);
+        if(el) el.textContent = '00';
+      });
+      var gate = document.getElementById('expiryGate');
+      if(gate){ gate.classList.add('active'); document.body.style.overflow='hidden'; }
+      return;
+    }
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    var days  = document.getElementById('t-days');
+    var hours = document.getElementById('t-hours');
+    var mins  = document.getElementById('t-mins');
+    var secs  = document.getElementById('t-secs');
+    if(days)  days.textContent  = pad(d);
+    if(hours) hours.textContent = pad(h);
+    if(mins)  mins.textContent  = pad(m);
+    if(secs)  secs.textContent  = pad(s);
+  }
+  tick();
+  setInterval(tick, 1000);
 })();
 
 </script>
